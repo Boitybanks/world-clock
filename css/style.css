@@ -1,7 +1,11 @@
 body {
-  background-color: #715164cb;
+  background-image: url("earth.avif");
+  background-attachment: fixed;
+  background-position: 25% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #387b83df;
-  color: #44249a;
+  color: #070314;
   font-family: "calibri", sans-serif;
   font-size: 22px;
   margin: 0;
@@ -10,18 +14,19 @@ body {
 #selectedcity {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #eae6e6;
+  border: 1px solid #407088;
+  background-color: #407088;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   margin-bottom: 30px;
 }
 
 .cities {
   display: block;
-  gap: 10px;
+  gap: 8px;
 }
 .city {
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px dashed #407088cc;
   padding: 10px;
 }
 .time {
@@ -31,21 +36,22 @@ body {
   justify-content: right;
   vertical-align: auto;
   margin-left: 80%;
-  margin-top: -60px;
+  margin-top: -80px;
   margin-bottom: 20px;
 }
 
 .date {
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: 15px;
   font-weight: normal;
+  font-size: small;
 }
 
 .time small {
   font-size: 10px;
   font-weight: normal;
   margin-left: 5px;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 h1 {
   font-size: xx-large;
@@ -54,11 +60,15 @@ h1 {
 
 footer {
   font-size: small;
+  font-size: 15px;
   text-align: center;
   padding: 10px;
-  background-color: #387b83df;
+  background-color: white;
   border-radius: 5px;
   color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 a {
   color: #44249a;
@@ -78,4 +88,26 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 10px 12px rgba(37, 25, 25, 0.4);
   margin-bottom: 40px;
+}
+#home {
+  text-align: center;
+  margin-bottom: 12px;
+  text-decoration: underline;
+  border: darkslategray 1px solid;
+  border-radius: 5px;
+  background-color: #407088;
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: small;
+  margin-top: 10px;
+}
+#home:hover {
+  text-decoration: none;
+  color: rgb(17, 16, 17);
+}
+#footer-message {
+  font-size: small;
+  text-align: center;
+  padding: 10px;
+  color: black;
 }

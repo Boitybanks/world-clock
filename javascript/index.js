@@ -4,9 +4,9 @@ function updateTime() {
     "hh:mm:ss [<small>]a[</small>]"
   );
 
-  const amsterdamTimeElement = document.querySelector("#Amsterdam .time");
-  amsterdamTimeElement.innerHTML = moment()
-    .tz("Europe/Amsterdam")
+  const mauritiusTimeElement = document.querySelector("#Mauritius .time");
+  mauritiusTimeElement.innerHTML = moment()
+    .tz("Indian/Mauritius")
     .format("hh:mm:ss [<small>]a[</small>]");
 }
 
@@ -30,3 +30,31 @@ function updateCityTime(event) {
 
 const citiesSelectElement = document.querySelector("#selectedcity");
 citiesSelectElement.addEventListener("change", updateCityTime);
+// Add event listener to the "Home" button
+const homeElement = document.querySelector("#home");
+homeElement.addEventListener("click", () => {
+  const citiesSelectElement = document.querySelector("#selectedcity");
+  citiesSelectElement.value = "";
+  const citiesBodyElement = document.querySelector("#cities");
+
+  citiesBodyElement.innerHTML = `
+    <div class="city" id="Johannesburg">
+      <h2>⏱️Johannesburg </h2>
+      <div class="date">${moment()
+        .tz("Africa/Johannesburg")
+        .format("MMMM Do YYYY")}</div>
+      <div class="time">${moment()
+        .tz("Africa/Johannesburg")
+        .format("hh:mm:ss [<small>]a[</small>]")}</div>
+    </div>
+    <div class="city" id="Mauritius">
+      <h2>⏱️Mauritius </h2>
+      <div class="date">${moment()
+        .tz("Indian/Mauritius")
+        .format("MMMM Do YYYY")}</div>
+      <div class="time">${moment()
+        .tz("Indian/Mauritius")
+        .format("hh:mm:ss [<small>]a[</small>]")}</div>
+    </div>
+  `;
+});
