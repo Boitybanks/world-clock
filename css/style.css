@@ -18,3 +18,7 @@ a:hover {
   text-decoration: underline;
   color: rgb(137, 34, 99);
 }
+.container {
+  font-family: "calibri", sans-serif;
+  text-align: center;
+}
