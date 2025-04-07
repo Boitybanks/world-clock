@@ -7,6 +7,7 @@ body {
   background-color: #387b83df;
   color: #070314;
   font-family: "calibri", sans-serif;
+  font-size: 20px;
   font-size: 22px;
   margin: 0;
   padding: 20px;
@@ -78,9 +79,11 @@ a {
 a:hover {
   text-decoration: underline;
   color: rgb(137, 34, 99);
+
 }
 .container {
   font-family: "calibri", sans-serif;
+  font-size: 20px;
   max-width: 550px;
   margin: 0 auto;
   background-color: white;
@@ -103,7 +106,7 @@ a:hover {
 }
 #home:hover {
   text-decoration: none;
-  color: rgb(17, 16, 17);
+  color: white
 }
 #footer-message {
   font-size: small;
