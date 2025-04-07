@@ -1,7 +1,9 @@
 body {
-  background-color: #bfc6c9;
-  color: #333;
+  background-color: #715164cb;
+  background-color: #387b83df;
+  color: #44249a;
   font-family: "calibri", sans-serif;
+  font-size: 22px;
   margin: 0;
   padding: 20px;
 }
@@ -57,7 +59,7 @@ footer {
   font-size: small;
   text-align: center;
   padding: 10px;
-  background-color: #8f7fb9df;
+  background-color: #387b83df;
   border-radius: 5px;
 }
 a {
@@ -71,7 +73,7 @@ a:hover {
 }
 .container {
   font-family: "calibri", sans-serif;
-  max-width: 450px;
+  max-width: 550px;
   margin: 0 auto;
   background-color: white;
   padding: 20px;

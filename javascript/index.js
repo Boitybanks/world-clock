@@ -16,7 +16,6 @@ function updateCityTime(event) {
   let cityTimezone = event.target.value;
   let citiesBodyElement = document.querySelector("#cities");
   let selectedCity = event.target.options[event.target.selectedIndex].text;
-  //
 
   let cityTime = moment()
     .tz(cityTimezone)
