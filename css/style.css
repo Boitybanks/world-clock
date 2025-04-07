@@ -19,11 +19,10 @@ body {
 .cities {
   display: block;
   gap: 10px;
-
 }
 .city {
-   border-bottom: 1px dashed #ccc; 
-   padding: 10px;
+  border-bottom: 1px dashed #ccc;
+  padding: 10px;
 }
 .time {
   font-size: 42px;
@@ -37,18 +36,16 @@ body {
 }
 
 .date {
-opacity: 0.5;
-font-size: 15px;
-font-weight: normal;
-  
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: normal;
 }
-
 
 .time small {
   font-size: 10px;
   font-weight: normal;
   margin-left: 5px;
-  margin-top:20px ;
+  margin-top: 20px;
 }
 h1 {
   font-size: xx-large;
